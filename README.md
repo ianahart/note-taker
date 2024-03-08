@@ -8,6 +8,10 @@
 - Node.js
 - Express.js Framework
 
+
+<img width="700" alt="note-taker" src="https://github.com/ianahart/note-taker/assets/29121238/cb509aa6-dc31-4756-8f72-12cc1da00ce9">
+
+
 ## Description
 
 This application allows the user to write down tasks or notes that they need to complete and have them saved. The project utilizes `Node.js`, and `Express.js`. Express js is a minimal unopionated web framework for creating REST APIs. The database is a JSON file where the server can interact with it, retrieving, adding and deleting notes.
