@@ -1,5 +1,7 @@
 const express = require('express');
 const path = require('path');
+const api = require('./routes/api');
+
 // initialize express app
 const app = express();
 
@@ -14,6 +16,9 @@ app.use(express.json());
 
 // parse form data to expose in the request body
 app.use(express.urlencoded({ extended: true }));
+
+// setup api routes
+app.use('/api', api);
 
 // send back the notes.html file when hitting GET::/notes
 app.get('/notes', (req, res) => {
