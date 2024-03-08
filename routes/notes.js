@@ -38,6 +38,8 @@ notes.post('/', (req, res) => {
   });
 });
 
+// get existing notes and remove the existing note that matches the passed in id from the route
+// then save the notes
 notes.delete('/:id', (req, res) => {
   fs.readFile(databaseFileName, (err, data) => {
     if (err) {
