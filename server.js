@@ -15,4 +15,14 @@ app.use(express.json());
 // parse form data to expose in the request body
 app.use(express.urlencoded({ extended: true }));
 
+// send back the notes.html file when hitting GET::/notes
+app.get('/notes', (req, res) => {
+  res.sendFile(path.join(__dirname, '/public/notes.html'));
+});
+
+// catch all route that will redirect any traffic to index.html
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '/public/index.html'));
+});
+
 app.listen(PORT, () => console.log(`sever running on port:${PORT}...`));
