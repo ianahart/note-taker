@@ -46,7 +46,7 @@ You can now navigate in the browser to `http://localhost:3001/` to get to the ho
 
 ## Visuals
 
-Heroku link here
+https://hart-note-taker-a4b3f140a0f2.herokuapp.com/
 
 ## Tests
 
